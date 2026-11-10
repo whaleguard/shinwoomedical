@@ -395,3 +395,6 @@ h2{color:var(--deep)}
  .catA span{font-size:15px;padding:10px 6px}
  .procA{grid-template-columns:1fr;gap:12px}
 }
+.heroA{min-height:0}
+.heroA-img{aspect-ratio:3/2;max-height:720px}
+.heroA-img img{object-position:65% 60%}
