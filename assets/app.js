@@ -34,7 +34,7 @@
     qp.querySelector('.x').addEventListener('click',function(){qp.hidden=true;qb.setAttribute('aria-expanded','false')});}
 
   // floating quick: after hero, hide when contact visible
-  if(qb){var hero=document.querySelector('.hero2,.hero,.ph'),ct=document.getElementById('contact'),pastHero=false,ctVis=false;
+  if(qb){var hero=document.querySelector('.hero2,.subhero,.hero,.ph'),ct=document.getElementById('contact'),pastHero=false,ctVis=false;
     function upd(){var off=!pastHero||ctVis;qb.classList.toggle('off',off);if(off&&qp&&!qp.hidden&&ctVis){qp.hidden=true}}
     if('IntersectionObserver' in window){
       if(hero)new IntersectionObserver(function(es){pastHero=!es[0].isIntersecting;upd()}).observe(hero);else pastHero=true;
